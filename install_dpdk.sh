@@ -73,10 +73,12 @@ if [ -d "build" ] && [ ! -f "build/build.ninja" ]; then
 fi
 
 if [ ! -d "build" ]; then
-    echo "运行 meson 配置..."
-    if ! meson setup build -Dprefix=$INSTALL_PREFIX; then
+    echo "运行 meson 配置（启用内核模块编译）..."
+    if ! meson setup build -Dprefix=$INSTALL_PREFIX -Denable_kmods=true; then
         echo "错误: meson 配置失败"
         echo "请检查错误信息，可能需要安装更多依赖"
+        echo "提示: 如果编译内核模块失败，可能需要安装内核头文件:"
+        echo "  sudo apt install -y linux-headers-$(uname -r)"
         exit 1
     fi
 fi

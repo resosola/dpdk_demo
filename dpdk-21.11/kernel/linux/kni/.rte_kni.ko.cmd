@@ -1,0 +1,1 @@
+cmd_/home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/rte_kni.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/rte_kni.ko /home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/rte_kni.o /home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/rte_kni.mod.o;  true

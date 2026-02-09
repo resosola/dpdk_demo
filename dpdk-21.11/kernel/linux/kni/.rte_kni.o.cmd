@@ -1,0 +1,1 @@
+cmd_/home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/rte_kni.o := ld  -m elf_x86_64 -z noexecstack     -r -o /home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/rte_kni.o /home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/kni_net.o /home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/kni_misc.o

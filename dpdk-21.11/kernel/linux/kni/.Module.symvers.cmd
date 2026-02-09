@@ -1,0 +1,1 @@
+cmd_/home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/Module.symvers := sed 's/\.ko$$/\.o/' /home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/modules.order | scripts/mod/modpost -m -a  -o /home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/Module.symvers -e -i Module.symvers   -T -

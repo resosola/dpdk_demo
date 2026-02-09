@@ -1,0 +1,1 @@
+cmd_/home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/modules.order := {   echo /home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/rte_kni.ko; :; } | awk '!x[$$0]++' - > /home/test/dpdk_demo/dpdk-21.11/kernel/linux/kni/modules.order
